@@ -8,7 +8,7 @@ namespace WebAddressbookTests
     [SetUpFixture]
     public class TestSuiteFixture
     {
-        [OneTimeSetUp]
+       [OneTimeSetUp]
         public void InitApplicationManager()
         {
             ApplicationManager app = ApplicationManager.GetInstance();

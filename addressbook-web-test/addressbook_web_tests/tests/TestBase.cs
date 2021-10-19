@@ -17,5 +17,11 @@ namespace WebAddressbookTests
         {
             app = ApplicationManager.GetInstance(); 
         }
+
+        [OneTimeTearDown]
+        public void AfterTest()
+        {
+            if (app.Driver != null) app.Driver.Quit();
+        }
     }
 }
